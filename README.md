@@ -1,4 +1,4 @@
-# RockPaperScissors
+# Rock Paper Scissors
 Who doesn't love the classic Rock Paper Scissors game? This project was created to practice creating functions, understand DOM manipulation, 
 and build problem solving skills. It is the third project in TOP. 
 
