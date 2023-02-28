@@ -32,7 +32,7 @@ gameBtns.forEach(button => button.addEventListener("click", () => {
         };
 
         if (computerSelection == rules[playerSelection]){
-            result.textContent = `You Win!`;
+            result.textContent = `You Win This Round!`;
             result2.textContent = `${playerSelection} beats ${computerSelection}`;
             playerScore++;
             playerScore_span.textContent = playerScore;
@@ -40,7 +40,7 @@ gameBtns.forEach(button => button.addEventListener("click", () => {
             result.textContent = "Draw!";
             result2.textContent = `${playerSelection} --- ${computerSelection}`
         } else {
-            result.textContent =`Computer Wins!`;
+            result.textContent =`Computer Wins This Round!`;
             result2.textContent = `${computerSelection} beats ${playerSelection}`
             computerScore++;
             computerScore_span.textContent = computerScore;
@@ -51,7 +51,7 @@ gameBtns.forEach(button => button.addEventListener("click", () => {
         } else if (playerScore == 5) {
             playerWins();
         } else {
-            result.textContent = "Draw!";
+            return result.textContent;
         }
 
         };
@@ -80,6 +80,7 @@ function computerWins() {
     document.getElementById('✌🏽').disabled = true;
     document.getElementById('✋🏽').disabled = true;
     document.getElementById('✊🏽').disabled = true;
+    result.textContent =`Computer Takes The Victory!`;
 };
 
 function playerWins() {
@@ -87,4 +88,5 @@ function playerWins() {
     document.getElementById('✌🏽').disabled = true;
     document.getElementById('✋🏽').disabled = true;
     document.getElementById('✊🏽').disabled = true;
+    result.textContent =`Player Takes The Victory!`;
 };
