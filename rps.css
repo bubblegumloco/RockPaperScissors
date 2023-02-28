@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+body {
+    background: linear-gradient(109.2deg, rgb(249, 174, 240) 6.5%,rgb(139, 144, 250) 97.1%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#gameBody {
+    display: flex;
+    gap: 175px;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-section {
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    color: white;
+    font-size: 3rem;
+}
+
+#title-section h1 {
+    margin-bottom: 0;
+}
+
+.gameBtns {
+    display: inline-block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: solid 3px;
+    transition: .4s;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 100px;
+}
+
+.gameBtns:active {
+    transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    box-shadow: 0 0 2px rgba(0,0,0,35);
+    border-bottom: none;
+}
+
+.playerCard, .computerCard {
+    padding: 30px;
+    height: 50vh;
+    font-family: 'Mynerve', cursive;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    gap: 100px;
+    padding-left: 90px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+#result, #resetBtn, #result2, .rules{
+    font-family: 'Mynerve', cursive;
+    color: white;
+    padding: 8px;
+}
+
+.resultBox {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 90px;
+}
+
+.rules {
+    text-align: center;
+    font-size: 25px;
+}
+
+#result2 {
+    margin: 0;
+    padding: 0;
+}
+
+#resetBtn {
+    padding: 8px;
+    background: rgb(231, 174, 249);
+    border-color: transparent;
+    opacity: 80%;
+    font-size: 30px;
+    margin-left: 90px;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+#resetBtn:hover {
+    background: rgb(249, 174, 240);
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 10px rgb(231, 174, 249), 0 0 40px rgb(229, 169, 247),
+    0 0 80px rgb(239, 94, 237);
+    transition-delay: 0.2s;
+}
