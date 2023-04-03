@@ -4,6 +4,8 @@ and build problem solving skills. It is the third project in TOP.
 
 I will create a second version soon once I learn more about advanced animations.
 
+Update: Here is the [second version](https://bubblegumloco.github.io/rps-animations/)!
+
 Will you conquer the computer? Test your fate ... 
 
 # What I Learned 
